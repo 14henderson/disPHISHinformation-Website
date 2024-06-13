@@ -1,0 +1,1 @@
+web: gunicorn -k eventlet --workers 1 app:app --error-logfile /workspace/testerrorlog.txt

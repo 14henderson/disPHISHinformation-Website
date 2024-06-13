@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The disPHISHinformation Game</title>
+		<link type="text/css" rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="/static/homepage-style.css">
+		<style type="text/css"></style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        {% block head %}
+            <!--Any child template can import additional scripts by extending the head.-->
+        {% endblock %}
+	</head>
+
+	
+	<body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/">The disPHISHinformation Game</a>
+
+            {% block nav %}
+
+            {% endblock %}
+        </nav>
+
+        {% block content %}
+            <!--Content extending this block will be inserted here.-->
+        {% endblock %}
+    </body>
+</html>

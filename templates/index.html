@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <script src="/static/homepage-script.js" defer></script>
+{% endblock %}
+
+
+{% block nav %}
+<ul class="navbar-nav me-auto mb-2 mb-md-0">
+  <li class="nav-item">
+    <a class="nav-link" href="#background-container">Background</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#download-container">Download</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#author-container">Author</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#publications-container">Publications</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#contact-container">Contact</a>
+  </li>
+</ul>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<main role="main" class="container">
+  <div id="game-image-carousel" class="carousel slide mb-6" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#game-image-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#game-image-carousel" data-slide-to="1"></li>
+      <li data-target="#game-image-carousel" data-slide-to="2"></li>
+      <li data-target="#game-image-carousel" data-slide-to="3"></li>
+      <li data-target="#game-image-carousel" data-slide-to="4"></li>
+      <li data-target="#game-image-carousel" data-slide-to="5"></li>
+      <li data-target="#game-image-carousel" data-slide-to="6"></li>
+      <li data-target="#game-image-carousel" data-slide-to="7"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171430.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171438.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171503.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171503.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background//IMG_20240605_171512.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171523.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171528.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171607.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#game-image-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#game-image-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  
+
+  <div class="container marketing">
+    <hr class="featurette-divider">
+
+    <div class="card text-left" id="background-container">
+      <div class="card-body">
+        <h5 class="card-title">Background</h5>
+        <p class="card-text">
+          In 2022, 39% of all UK businesses reported identifying a cyber security attack against their own organisation, 83% of which were phishing attempts. A large body of research in cyber security focuses on technical solutions, however humans remain one of the most exploitable endpoints in an organisation. Traditional security training within organisations commonly includes point-and-click exercises and simple video media that employees are required to complete. These training exercises are often seen as unengaging and tedious, and employees are commonly pushed to complete training rather than encouraged to learn and self-educate. Simulations and games are increasingly being deployed for training purposes in organisations, however often either (a) simply raise cyber security awareness rather than deliver key security policy and content, or (b) lack accessibility with complex game pieces and rules not easily understandable by those not accustomed to playing games. We introduce the disPHISHinformation game: a customisable serious game to deliver phishing training specific to the threats businesses face on a day-to-day basis. Drawing on existing taxonomies, the game delivers content on email, voice, and SMS social engineering attacks, in a format that educates players in key social engineering features. In collaboration with a large service organisation, we have also developed a customised edition of disPHISHinformation game which reflects the targeted attacks faced by their staff. By creating an analog serious game to deliver key phishing training, we can stimulate higher employee engagement and deliver a more memorable experience.
+        </p>
+      </div>
+      <div class="card-footer text-muted">
+        Published as part of the 15th International Conference on Applied Human Factors and Ergonomics (AHFE 2024)
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="card text-left" id="download-container">
+      <div class="card-body">
+        <h5 class="card-title">Download the disPHISHinformation Game</h5>
+        <p>The disPHISHinformation game can be found using the following links. Empty game card templates can also be found with those files. We welcome all to try the game; although it has been designed with businesses in mind, it can also be played at home. The cards are designed to be relatively generalisable - if you have written your own game rules please let us know! We'd love to hear your ideas.</p>
+        <button data-toggle="modal" data-target="#download-modal" class="btn btn-primary">Download Version 1.0</button>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    <div id="presentation-recording-container">
+      <iframe id="presentation-recording-iframe" src="https://www.youtube.com/embed/UcXHkK96CdM?si=E-jkkCkCKwWZPvKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="author-container">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Author</h2>
+        <p class="lead">Niklas Henderson is a PhD candidate within the Privacy, Security and Trust research group at the University of East Anglia, and a part-time Game Development lecturer at Norwich University of the Arts. Niklas’s research focuses on making game platforms to elicit effective inoculation interventions against false information. Niklas has particular interest in how analog games (physical games) can be used for this purpose, and how serious game design methods can be used to create more effective interventions. Niklas is also an enthusiastic public speaker, previously presenting at the Norwich Science Festival on topics including games against disinformation, and disinformation in large language models such as ChatGPT. Niklas has often been involved with other outreach programmes, running workshops at schools around Norfolk and Suffolk.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="/static/images/author.jpg">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+    <div class="card text-left" id="publications-container">
+      <div class="card-body">
+        <h5 class="card-title">Publications</h5>
+        <ul class="ul">
+          <li><b>The disPHISHinformation Game: Creating a Serious Game to Fight Phishing Using Blended Design Approaches</b>Henderson, N. (2024). (coming soon)</li>
+          <li><b>The Phishing Game: An Analog Game To Defend UK Organisations From Phishing. </b>Henderson, N. (2024). <a href="https://dspace.lib.cranfield.ac.uk/bitstream/handle/1826/21324/6%20N%20Henderson%20v2.pdf?sequence=1">View Poster</a></a></li>
+          <li><b>The disPHISHinformation Game: Creating a Serious Game to Fight Phishing. </b>Henderson, N. (2024). Will Video Games Make You Stupid?. <a href="https://www.youtube.com/watch?v=UcXHkK96CdM">View Conference Presentation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="card text-left" id="contact-container">
+      <div class="card-body">
+        <h5 class="card-title">Contact Us</h5>
+        <p>Please feel free to contact me at <a href="mailto:n.henderson@uea.ac.uk">n.henderson[at]uea.ac.uk</a>. You can find me on <a href="https://x.com/14hendersonn">Twitter</a> (aka X if you're feeling controversial) or <a href="https://www.linkedin.com/in/niklas-henderson/">LinkedIn</a> as well.</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal show bd-example-modal-lg" id="download-modal" data-show=true tabindex="-1" role="dialog" aria-labelledby="download-modal-label" aria-hidden="false">
+  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="download-modal-label">Download The Game</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+
+      <div class="modal-body">
+        <p>The cards for the game can be found at the following links. For best resutls, we currently recommend cards to be printed at a size of 143mm x 66mm, double sided on 350gsm silk. Cards can be given a matt laminate on both sides for protection. If you have better success with a different setup please let us know.</p>
+          <ul>
+            <li>Phish Cards: <a href="/static/files/game-v1.0/PHISH Card Designs v2.1.pdf">View PDF</a></li>
+            <li>Safe Cards: <a href="/static/files/game-v1.0/SAFE Card Designs v2.1.pdf">View PDF</a></li>
+            <li>Action Cards: <a href="/static/files/game-v1.0/ACTION Card Designs v2.1.pdf">View PDF</a></li>
+          </ul>
+
+          <p class="font-weight-light font-italic">
+            
+            Thank you very much for playing the disPHISHinformation card game, we hope that you find it interesting, fun, and useful. This game represents part of a larger project in gamified approaches to protect players against disinformation (<a href="https://research-portal.uea.ac.uk/en/persons/niklas-henderson">link</a> to research). This game in particular relies on feedback from UK organisations in a quasi crowdsourced playtest. Please consider completing a playtest form along with playing the game, and returning this feedback to the research team.
+            Please enjoy the disPHISHinformation game!
+            Best wishes,
+            Niklas
+            
+          </p>
+          <ul>
+            <li>Playtesting Form: <a href="/static/files/Jan 2024 Playtesting Document.pdf">View PDF</a></li>
+          </ul>
+      </div>
+
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}
