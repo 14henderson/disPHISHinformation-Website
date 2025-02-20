@@ -18,14 +18,14 @@
 	<body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="/">The disPHISHinformation Game</a>
-
             {% block nav %}
 
             {% endblock %}
         </nav>
-
-        {% block content %}
-            <!--Content extending this block will be inserted here.-->
-        {% endblock %}
+        <div class="container" id="content-container">
+            {% block content %}
+                <!--Content extending this block will be inserted here.-->
+            {% endblock %}
+        </div>
     </body>
 </html>

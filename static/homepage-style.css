@@ -5,5 +5,30 @@
     width: 100%;
     height: 600px;
     z-index: 5;
-    
+}
+
+body {
+    background-image: url('/static/images/lasdun-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#content-container{
+    background-color: white;
+}
+
+html{
+    height: 100%;
+}
+
+.container{
+    padding-top:25px;
+}
+
+#UEALogo{
+    height: 70px;
+}
+#EPSRCLogo{
+    height: 70px;
 }
