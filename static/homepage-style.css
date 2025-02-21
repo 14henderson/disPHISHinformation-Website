@@ -14,15 +14,25 @@ body {
     background-size: cover;
 }
 
+.navbar{
+    height: 4vh;
+}
+
 #content-container{
     background-color: white;
+    padding:0px;
+}
+
+#informational-content-container{
+    padding-left: 15px;
+    padding-right: 15px; 
 }
 
 html{
     height: 100%;
 }
 
-.container{
+#content-div{
     padding-top:25px;
 }
 
@@ -31,4 +41,20 @@ html{
 }
 #EPSRCLogo{
     height: 70px;
+}
+
+#title-img-container{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#title-banner{
+    width: 100%;
 }
