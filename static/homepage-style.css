@@ -7,20 +7,31 @@
     z-index: 5;
 }
 
+main{
+    padding-top:15px;
+}
+
 body {
     background-image: url('/static/images/lasdun-background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 .navbar{
     height: 4vh;
 }
 
+#page-title{
+    font-size:4em;
+    text-align: center;
+}
+
 #content-container{
     background-color: white;
     padding:0px;
+    margin-top: 10vh;
 }
 
 #informational-content-container{
@@ -33,7 +44,7 @@ html{
 }
 
 #content-div{
-    padding-top:25px;
+    padding-top:10px;
 }
 
 #UEALogo{
