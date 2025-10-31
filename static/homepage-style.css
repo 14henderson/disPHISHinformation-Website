@@ -7,9 +7,12 @@
     z-index: 5;
 }
 
-main{
-    padding-top:15px;
+#container-banner-img{
+    width:100%;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
+
 
 body {
     background-image: url('/static/images/lasdun-background.jpg');
@@ -21,11 +24,19 @@ body {
 
 .navbar{
     height: 4vh;
+    background-color: #343a40;
 }
 
 #page-title{
-    font-size:4em;
+    font-size:4.5vw;
     text-align: center;
+    padding-top:30px;
+    padding-bottom:10px;
+    font-style: italic;
+    white-space: nowrap;
+}
+#title-phish-section{
+    color:rgb(191, 0, 0);
 }
 
 #content-container{
@@ -39,13 +50,11 @@ body {
     padding-right: 15px; 
 }
 
+
 html{
     height: 100%;
 }
 
-#content-div{
-    padding-top:10px;
-}
 
 #UEALogo{
     height: 70px;
@@ -63,9 +72,50 @@ html{
     
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 #title-banner{
     width: 100%;
+}
+
+.card{
+    background-color: rgb(247, 247, 247);
+}
+
+.modal-open {
+    overflow-y: scroll;
+    padding-right:0 !important;
+}
+
+
+@media (width < 768px) {
+
+.navbar-brand{
+    display:none;
+}
+
+#nav-item-container{
+    border-left: solid;
+    border-left-color: #343a40;
+    padding:10px !important;
+    z-index: 1;
+    display:none
+}
+.nav-link{
+    color:black !important;
+    padding: 5px;
+}
+
+nav{
+    background-color: transparent !important;
+}
+
+#page-title{
+    font-size:4.5vw;   
+}
+
+#content-container{
+    margin-top:0;
+}
+    
 }

@@ -6,27 +6,29 @@
 
 
 {% block nav %}
-<ul class="navbar-nav me-auto mb-2 mb-md-0">
-  <li class="nav-item">
-    <a class="nav-link" href="#background-container">Background</a>
-  </li>
+<div id="nav-item-container">
+  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <li class="nav-item">
+      <a class="nav-link" href="#background-container">Background</a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#download-container">Download</a>
-  </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#download-container">Download</a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#author-container">Author</a>
-  </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#author-container">Author</a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#publications-container">Publications</a>
-  </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#publications-container">Publications</a>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#contact-container">Contact</a>
-  </li>
-</ul>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact-container">Contact</a>
+    </li>
+  </ul>
+</div>
 {% endblock %}
 
 
@@ -34,13 +36,29 @@
 
 {% block content %}
 
+<!--img id="container-banner-img" src="/static/images/card-title-banner-2.png"-->
+
 <main role="main" class="container" id="informational-content-container">
-  <div class="container">
-    <h1 id="page-title">The disPHISHinformation Game</h1>
-    <hr>
-  </div>
-  <div id="content-div" class="container marketing">
+  <div class="container title-container">
     
+    <h1 id="page-title">The dis<span id="title-phish-section">PHISH</span>information Game</h1>
+  </div>
+
+<hr class="featurette-divider">
+
+  <div id="content-div" class="container marketing">
+    <div class="card text-left" id="download-container">
+      <div class="card-body">
+        <!--h5 class="card-title">The disPHISHinformation Game</h5-->
+        <p>The disPHISHinformation game is a collaborative card created using inoculation as a foundational theory. The disPHISHinformation game is designed to teach players key skills relating to <a href="https://www.ncsc.gov.uk/collection/phishing-scams">phishing, smishing, and vishing</a>. The disPHISHinformation game is designed to improve on traditional employee training exercises such as point-and-click tasks and video media. Developed using blended approaches from serious game design, inoculation theory, and a crowdsourced playtesting approach, the disPHISHinformation game is designed to educate players in phishing techniques and stimulate collaborative learning between players. <br><br>
+          The disPHISHinformation game can be found using the following links. Empty game card templates can also be found with those files. We welcome all to try the game; although it has been designed with businesses in mind, it can also be played at home. The cards are designed to be relatively generalisable - if you have written your own game rules please let us know! We'd love to hear your ideas.</p>
+          <button data-toggle="modal" data-target="#download-modal" class="btn btn-primary">Download Version 1.0</button>
+      </div>
+    </div>
+
+  
+    <hr class="featurette-divider">
+
     <div id="game-image-carousel" class="carousel slide mb-6" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#game-image-carousel" data-slide-to="0" class="active"></li>
@@ -90,19 +108,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="card text-left" id="download-container">
-      <div class="card-body">
-        <h5 class="card-title">The disPHISHinformation Game</h5>
-        <p>The disPHISHinformation game is a collaborative card created using inoculation as a foundational theory. The disPHISHinformation game is designed to teach players key skills relating to <a href="https://www.ncsc.gov.uk/collection/phishing-scams">phishing, smishing, and vishing</a>. The disPHISHinformation game is designed to improve on traditional employee training exercises such as point-and-click tasks and video media. Developed using blended approaches from serious game design, inoculation theory, and a crowdsourced playtesting approach, the disPHISHinformation game is designed to educate players in phishing techniques and stimulate collaborative learning between players. <br><br>
-          
-          
-          The disPHISHinformation game can be found using the following links. Empty game card templates can also be found with those files. We welcome all to try the game; although it has been designed with businesses in mind, it can also be played at home. The cards are designed to be relatively generalisable - if you have written your own game rules please let us know! We'd love to hear your ideas.</p>
-        <button data-toggle="modal" data-target="#download-modal" class="btn btn-primary">Download Version 1.0</button>
-      </div>
-    </div>
-
-  
-    <hr class="featurette-divider">
+    
 
     <div class="card text-left" id="background-container">
       <div class="card-body">
@@ -239,6 +245,10 @@
   <p><i>Copyright © University of East Anglia 2024, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></i></p>
 
   <hr class="featurette-divider">
+
+
+
+
 
 <div class="modal show bd-example-modal-lg" id="download-modal" data-show=true tabindex="-1" role="dialog" aria-labelledby="download-modal-label" aria-hidden="false">
   <div class="modal-dialog modal-lg" role="document">
