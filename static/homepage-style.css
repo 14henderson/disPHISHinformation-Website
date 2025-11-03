@@ -28,7 +28,7 @@ body {
 }
 
 #page-title{
-    font-size:4.5vw;
+    font-size:4.5em;
     text-align: center;
     padding-top:30px;
     padding-bottom:10px;
@@ -87,6 +87,24 @@ html{
     padding-right:0 !important;
 }
 
+@media (width < 1200px) and (width >= 768px) {
+    #page-title{
+        font-size:3.8em;   
+    }
+}
+
+@media (width < 1200px) and (width >= 992px) {
+    #page-title{
+        font-size:3.8em;   
+    }
+}
+
+@media (width < 992px) and (width >= 768px) {
+    #page-title{
+        font-size:2.9em;   
+    }
+}
+
 
 @media (width < 768px) {
 
@@ -111,7 +129,8 @@ nav{
 }
 
 #page-title{
-    font-size:4.5vw;   
+    font-size:2em;   
+    text-wrap-mode: wrap;
 }
 
 #content-container{
