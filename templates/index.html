@@ -8,12 +8,13 @@
 {% block nav %}
 <div id="nav-item-container">
   <ul class="navbar-nav me-auto mb-2 mb-md-0">
-    <li class="nav-item">
-      <a class="nav-link" href="#background-container">Background</a>
-    </li>
 
     <li class="nav-item">
       <a class="nav-link" href="#download-container">Download</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#background-container">Background</a>
     </li>
 
     <li class="nav-item">
@@ -38,13 +39,17 @@
 
 <!--img id="container-banner-img" src="/static/images/card-title-banner-2.png"-->
 
+
+<img src="/static/images/thin-banner/IMG_3057.jpg" id="banner-photo">
+
 <main role="main" class="container" id="informational-content-container">
   <div class="container title-container">
-    
-    <h1 id="page-title">The dis<span id="title-phish-section">PHISH</span>information Game</h1>
+  
+  <h1 id="page-title">The dis<span id="title-phish-section">PHISH</span>information Game</h1>
   </div>
+  <hr class="featurette-divider">
 
-<hr class="featurette-divider">
+  <hr class="featurette-divider">
 
   <div id="content-div" class="container marketing">
     <div class="card text-left" id="download-container">
@@ -54,6 +59,7 @@
           The disPHISHinformation game can be found using the following links. Empty game card templates can also be found with those files. We welcome all to try the game; although it has been designed with businesses in mind, it can also be played at home. The cards are designed to be relatively generalisable - if you have written your own game rules please let us know! We'd love to hear your ideas.</p>
           <button data-toggle="modal" data-target="#download-modal-2" class="btn btn-primary download-btn">Download Version 1.2</button>
           <button data-toggle="modal" data-target="#download-modal" class="btn btn-primary download-btn">Download Version 1.0</button>
+          <button data-toggle="modal" data-target="#designprocess-modal" class="btn btn-primary download-btn">Design Process</button>
       </div>
     </div>
 
@@ -129,83 +135,18 @@
       <iframe id="presentation-recording-iframe" src="https://www.youtube.com/embed/UcXHkK96CdM?si=E-jkkCkCKwWZPvKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <hr class="featurette-divider">
-
-
-
-    <div class="card text-left" id="design-history-container">
-      <div class="card-body">
-        <!--h5 class="card-title">Design Process for the DisPHISHinformation Game</h5-->
-        
-        <div id="game-design-carousel" class="carousel slide mb-6" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#game-image-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#game-image-carousel" data-slide-to="1"></li>
-            <li data-target="#game-image-carousel" data-slide-to="2"></li>
-            <li data-target="#game-image-carousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="/static/images/dev-process/original-paper.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p>The first cards for the game were printed on paper, with predominantly LLM generated text. Cards remained portrait and very small scale. Card veracity was indicated with the colour of card rear (red or green). Action cards were part of the game from the early stages of designing.</p>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/static/images/dev-process/paper-sizing.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p>Calculating the design of cards when landscape-oriented.</p>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/static/images/dev-process/first-card.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <p>Initial landscape cards, with provisinal art design and layout. The layout of cards has since been updated to allow card content (particularly text) to be as large as possible. The cards were additionaly enlarged by approx 30%.</p>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171503.jpg" alt="Fourth slide">
-              
-            </div>
-
-
-          </div>
-          <a class="carousel-control-prev" href="#game-design-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#game-design-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        
-        
-        
-        
-      </div>
-    </div>
-
-
-
-
-
-
 
 
     <hr class="featurette-divider">
 
     <div class="row featurette" id="author-container">
-      <div class="col-md-7 order-md-2">
+      <div class="col-md-9 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Author</h2>
-        <p class="lead"><a href="https://research-portal.uea.ac.uk/en/persons/niklas-henderson">Niklas Henderson</a> is a PhD candidate within the Privacy, Security and Trust research group at the University of East Anglia, and a part-time Game Development lecturer at Norwich University of the Arts. Niklas’s research focuses on making game platforms to elicit effective inoculation interventions against false information. Niklas has particular interest in how analog games (physical games) can be used for this purpose, and how serious game design methods can be used to create more effective interventions. Niklas is also an enthusiastic public speaker, previously presenting at the Norwich Science Festival on topics including games against disinformation, and disinformation in large language models such as ChatGPT. Niklas has often been involved with other outreach programmes, running workshops at schools around Norfolk and Suffolk.
+        <p class="lead"><a href="https://research-portal.uea.ac.uk/en/persons/niklas-henderson">Niklas Henderson</a> has recently completed his EPSRC-funded PhD in the School of Computing Sciences, and is a part-time Game Development lecturer at Norwich University of the Arts. His research focusses on how communication theories can be effectively used to create game-based activities that build players' resistance to misinformation. He has particular interest in inoculation theory, how analogue games (physical games) can be used for this purpose, and how serious game design methods can be used to create more effective interventions. 
         </p>
       </div>
-      <div class="col-md-5 order-md-1">
-        <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="/static/images/author.jpg">
+      <div class="col-md-3 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" width="250" height="250" src="/static/images/author.jpg">
       </div>
     </div>
 
@@ -215,11 +156,13 @@
 
     <div class="card text-left" id="publications-container">
       <div class="card-body">
-        <h5 class="card-title">Publications</h5>
+        <h5 class="card-title">Publications & Related Links</h5>
         <ul class="ul">
-          <li><b>The disPHISHinformation Game: Creating a Serious Game to Fight Phishing Using Blended Design Approaches . </b>Niklas Henderson, Helen Pallett, Sander van der Linden, Jake Montanarini, Oliver Buckley (2024). <a href="https://research-portal.uea.ac.uk/en/publications/the-disphishinformation-game-creating-a-serious-game-to-fight-phi-2">View Conference Paper</a></li>
+          <li><b>The Misinformation Game: The Effectiveness of Analogue Serious Games as an Inoculation Against Misinformation.</b> <i>PhD Thesis.</i> Niklas Henderson (2026.). <a href="https://ueaeprints.uea.ac.uk/id/eprint/101976/">View Thesis</a></li>
+          <li><b>The disPHISHinformation Game: Creating a Serious Game to Fight Phishing Using Blended Design Approaches. </b>Niklas Henderson, Helen Pallett, Sander van der Linden, Jake Montanarini, Oliver Buckley (2024). <a href="https://research-portal.uea.ac.uk/en/publications/the-disphishinformation-game-creating-a-serious-game-to-fight-phi-2">View Conference Paper</a></li>
           <li><b>The Phishing Game: An Analog Game To Defend UK Organisations From Phishing. </b>Niklas Henderson, Oliver Buckley (2024). <a href="https://dspace.lib.cranfield.ac.uk/bitstream/handle/1826/21324/6%20N%20Henderson%20v2.pdf?sequence=1">View Poster</a></a></li>
           <li><b>The disPHISHinformation Game: Creating a Serious Game to Fight Phishing. </b>Niklas Henderson (2024). Will Video Games Make You Stupid? <a href="https://www.youtube.com/watch?v=UcXHkK96CdM">View Conference Presentation</a></li>
+          <li><b>Playful Training Against Social Engineering.</b> <i>UEA Research Group Info.</i> <a href="https://www.uea.ac.uk/groups-and-centres/cyber-intelligence-and-networks/social-cyber-engineering-and-digital-trust">View Reserach Page</a></li>
         </ul>
       </div>
     </div>
@@ -333,6 +276,69 @@
 </div>
 
 
+
+<div class="modal show bd-example-modal-lg" id="designprocess-modal" data-show=true tabindex="-1" role="dialog" aria-labelledby="designprocess-modal-label" aria-hidden="false">
+  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="designprocess-modal-label">Design Process for <i>The DisPHISHinformation Game</i></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+
+      <div class="modal-body">
+        <div id="game-design-carousel" class="carousel slide mb-6" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <!--li data-target="#game-image-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#game-image-carousel" data-slide-to="1"></li>
+            <li data-target="#game-image-carousel" data-slide-to="2"></li-->
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/static/images/dev-process/original-paper.jpg" alt="First slide">
+              <div class="custom-carousel-caption">
+                <p style="height:200px">The first cards for the game were printed on paper, with predominantly LLM generated text. Cards remained portrait and very small scale. Card veracity was indicated with the colour of card rear (red or green). Action cards were part of the game from the early stages of designing.</p>
+              </div>
+              
+            </div>
+            
+
+            
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/static/images/dev-process/first-card.jpg" alt="Second slide">
+              <div class="custom-carousel-caption">
+                <p style="height:200px">Initial landscape cards, with provisinal art design and layout. The layout of cards has since been updated to allow card content (particularly text) to be as large as possible. The cards were additionaly enlarged by approx 30%.</p>
+              </div>
+              
+            </div>
+            
+            <!--div class="carousel-item">
+              <img class="d-block w-100" src="/static/images/game-background/IMG_20240605_171503.jpg" alt="Third slide">
+              
+            </div-->
+
+
+          </div>
+          <a class="carousel-control-prev" href="#game-design-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#game-design-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+          
+      </div>
+
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+  </div>
+</div>
 
 
 </main>
